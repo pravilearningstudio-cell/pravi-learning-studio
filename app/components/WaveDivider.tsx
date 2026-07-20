@@ -1,0 +1,17 @@
+export default function WaveDivider() {
+  return (
+    <div className="overflow-hidden leading-none">
+      <svg
+        className="block h-20 w-full"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1440 120"
+        preserveAspectRatio="none"
+      >
+        <path
+          fill="#FAF9F6"
+          d="M0,64L60,58.7C120,53,240,43,360,48C480,53,600,75,720,80C840,85,960,75,1080,64C1200,53,1320,43,1380,37.3L1440,32L1440,120L0,120Z"
+        />
+      </svg>
+    </div>
+  );
+}
