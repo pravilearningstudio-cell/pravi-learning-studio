@@ -5,6 +5,7 @@ import About from "./components/About";
 import Philosophy from "./components/Philosophy";
 import Method from "./components/Method";
 import Courses from "./components/Courses";
+import ProgrammesFees from "./components/ProgrammesFees";
 import StudentJourney from "./components/StudentJourney";
 import Testimonials from "./components/Testimonials";
 import WaitingList from "./components/WaitingList";
@@ -31,6 +32,9 @@ export default function Home() {
       <WaveDivider />
 
       <Courses />
+      <WaveDivider />
+
+      <ProgrammesFees />
       <WaveDivider />
 
       <StudentJourney />
