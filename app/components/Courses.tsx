@@ -1,38 +1,30 @@
 "use client";
 
 import { motion } from "framer-motion";
-import {
-  BookOpen,
-  Calculator,
-  Languages,
-  Presentation,
-} from "lucide-react";
+import { Calculator, BookOpen, Landmark } from "lucide-react";
 
 export default function Courses() {
   const courses = [
     {
-      icon: <BookOpen className="h-10 w-10 text-[#7B93B0]" />,
-      title: "English",
-      description:
-        "Primary and Secondary English lessons that build strong communication, writing, reading, and comprehension skills.",
-    },
-    {
       icon: <Calculator className="h-10 w-10 text-[#A8BFA3]" />,
       title: "Primary Mathematics",
+      level: "Standard 4 • Standard 5 • Standard 6",
       description:
-        "Helping young learners develop confidence in mathematics through clear explanations and engaging practice.",
+        "Build strong mathematical foundations through clear explanations, guided practice, and confidence-building lessons tailored for upper primary learners.",
     },
     {
-      icon: <Languages className="h-10 w-10 text-[#7B93B0]" />,
+      icon: <Landmark className="h-10 w-10 text-[#7B93B0]" />,
+      title: "Primary Sejarah",
+      level: "Standard 4 • Standard 5 • Standard 6",
+      description:
+        "Make Sejarah easier to understand and remember through engaging explanations, key concepts, and effective revision techniques.",
+    },
+    {
+      icon: <BookOpen className="h-10 w-10 text-[#A8BFA3]" />,
       title: "SPM Moral",
+      level: "Form 4 • Form 5",
       description:
-        "Master SPM Moral with effective answering techniques, value analysis, and structured exam preparation.",
-    },
-    {
-      icon: <Presentation className="h-10 w-10 text-[#A8BFA3]" />,
-      title: "Exam Seminars & Revision",
-      description:
-        "Focused revision sessions, exam strategies, study techniques, and practical tips to help students perform at their best.",
+        "Master SPM Moral through value understanding, structured answering techniques, and focused exam preparation.",
     },
   ];
 
@@ -47,7 +39,7 @@ export default function Courses() {
           className="mx-auto max-w-3xl text-center"
         >
           <span className="rounded-full bg-white px-5 py-2 text-sm font-semibold text-[#2F3A3D] shadow">
-            Our Learning Programmes
+            Our Tuition Programmes
           </span>
 
           <h2 className="mt-6 text-4xl font-bold text-[#2F3A3D] md:text-5xl">
@@ -59,12 +51,12 @@ export default function Courses() {
           </h2>
 
           <p className="mt-8 text-lg leading-8 text-gray-600">
-            Carefully designed programmes that help every learner build
-            understanding, confidence, and lasting success.
+            Focused tuition programmes designed to build understanding,
+            confidence, and strong academic foundations.
           </p>
         </motion.div>
 
-        <div className="mt-20 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto mt-20 grid max-w-5xl gap-8 md:grid-cols-3">
           {courses.map((course, index) => (
             <motion.div
               key={course.title}
@@ -82,6 +74,10 @@ export default function Courses() {
               <h3 className="text-2xl font-bold text-[#2F3A3D]">
                 {course.title}
               </h3>
+
+              <p className="mt-2 text-sm font-semibold text-[#7B93B0]">
+                {course.level}
+              </p>
 
               <p className="mt-4 leading-7 text-gray-600">
                 {course.description}
