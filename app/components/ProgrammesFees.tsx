@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 import {
   Calculator,
   BookOpen,
-  GraduationCap,
   HeartHandshake,
 } from "lucide-react";
 
@@ -12,6 +11,7 @@ const programmes = [
   {
     icon: Calculator,
     title: "Primary Mathematics",
+    level: "Standard 4 • Standard 5 • Standard 6",
     duration: "1 Hour",
     schedule: "Once Weekly",
     lesson: "RM20 / lesson",
@@ -20,7 +20,8 @@ const programmes = [
   },
   {
     icon: BookOpen,
-    title: "Primary English",
+    title: "Primary Sejarah",
+    level: "Standard 4 • Standard 5 • Standard 6",
     duration: "1 Hour",
     schedule: "Once Weekly",
     lesson: "RM20 / lesson",
@@ -28,22 +29,14 @@ const programmes = [
     color: "bg-[#F5EFE7]",
   },
   {
-    icon: GraduationCap,
-    title: "Secondary English",
+    icon: HeartHandshake,
+    title: "SPM Moral",
+    level: "Form 4 • Form 5",
     duration: "1.5 Hours",
     schedule: "Once Weekly",
     lesson: "RM30 / lesson",
     month: "RM120 / month",
     color: "bg-[#EEF4F1]",
-  },
-  {
-    icon: HeartHandshake,
-    title: "SPM Moral",
-    duration: "1.5 Hours",
-    schedule: "Once Weekly",
-    lesson: "RM30 / lesson",
-    month: "RM120 / month",
-    color: "bg-[#F5EFE7]",
   },
 ];
 
@@ -78,7 +71,7 @@ export default function TuitionFees() {
           </p>
         </motion.div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-2 xl:grid-cols-4">
+        <div className="mx-auto mt-16 grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
           {programmes.map((item, index) => {
             const Icon = item.icon;
 
@@ -107,6 +100,10 @@ export default function TuitionFees() {
                 <h3 className="text-2xl font-bold text-[#2F3A3D]">
                   {item.title}
                 </h3>
+
+                <p className="mt-2 text-sm font-semibold text-[#7B93B0]">
+                  {item.level}
+                </p>
 
                 <div className="mt-6 space-y-3 text-gray-600">
                   <p>
