@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import {
   Calculator,
   BookOpen,
-  FlaskConical,
+  Landmark,
 } from "lucide-react";
 
 const programmes = [
@@ -29,8 +29,8 @@ const programmes = [
     color: "bg-[#F5EFE7]",
   },
   {
-    icon: FlaskConical,
-    title: "SPM Chemistry",
+    icon: Landmark,
+    title: "SPM Sejarah",
     level: "Form 4 • Form 5",
     duration: "1.5 Hours",
     schedule: "Once Weekly",

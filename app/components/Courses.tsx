@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calculator, BookOpen, FlaskConical } from "lucide-react";
+import { Calculator, BookOpen, Landmark } from "lucide-react";
 
 export default function Courses() {
   const courses = [
@@ -20,11 +20,11 @@ export default function Courses() {
         "Master SPM Moral through value understanding, structured answering techniques, and focused exam preparation.",
     },
     {
-      icon: <FlaskConical className="h-10 w-10 text-[#A8BFA3]" />,
-      title: "SPM Chemistry",
+      icon: <Landmark className="h-10 w-10 text-[#A8BFA3]" />,
+      title: "SPM Sejarah",
       level: "Form 4 • Form 5",
       description:
-        "Build a strong understanding of Chemistry through clear explanations, concept-based learning, problem-solving practice, and focused SPM preparation.",
+        "Build a strong understanding of Sejarah through clear explanations, timeline-based learning, structured answering techniques, and focused SPM preparation.",
     },
   ];
 

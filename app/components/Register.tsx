@@ -54,7 +54,7 @@ export default function WaitingList() {
                   📖 <strong>SPM Moral</strong> — Form 4–5
                 </li>
                 <li>
-                  🧪 <strong>SPM Chemistry</strong> — Form 4–5
+                  📚 <strong>SPM Sejarah</strong> — Form 4–5
                 </li>
               </ul>
             </div>

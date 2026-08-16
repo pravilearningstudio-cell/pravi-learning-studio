@@ -175,7 +175,7 @@ export default function WaitingForm() {
             <option value="">Select a subject</option>
             <option value="Mathematics">Mathematics</option>
             <option value="Pendidikan Moral">Pendidikan Moral</option>
-            <option value="Chemistry">Chemistry</option>
+            <option value="Sejarah">Sejarah</option>
           </select>
         </div>
       </div>
