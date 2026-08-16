@@ -107,6 +107,7 @@ export default function WaitingForm() {
       className="rounded-[2rem] border border-white/50 bg-white/70 p-8 shadow-2xl backdrop-blur-xl md:p-10"
     >
       <div className="grid gap-6 md:grid-cols-2">
+        {/* Parent Name */}
         <div>
           <label className="mb-2 block text-sm font-semibold text-[#2F3A3D]">
             Parent Name
@@ -123,6 +124,7 @@ export default function WaitingForm() {
           />
         </div>
 
+        {/* Email */}
         <div>
           <label className="mb-2 block text-sm font-semibold text-[#2F3A3D]">
             Email
@@ -139,6 +141,7 @@ export default function WaitingForm() {
           />
         </div>
 
+        {/* Child */}
         <div>
           <label className="mb-2 block text-sm font-semibold text-[#2F3A3D]">
             Child's Age / School Year
@@ -155,6 +158,7 @@ export default function WaitingForm() {
           />
         </div>
 
+        {/* Subject */}
         <div>
           <label className="mb-2 block text-sm font-semibold text-[#2F3A3D]">
             Interested Subject
@@ -167,16 +171,18 @@ export default function WaitingForm() {
             onChange={handleChange}
             className={inputClasses}
           >
-             <option value="">Select a subject</option>
- <option>English</option>
-  <option>Mathematics</option>
-  <option>Bahasa Melayu</option>
-  <option>Sejarah</option>
-  <option>Pendidikan Moral</option>
+            <option value="">Select a subject</option>
+            <option value="Pendidikan Moral (SPM)">
+              Pendidikan Moral (SPM)
+            </option>
+            <option value="English">English</option>
+            <option value="Sejarah">Sejarah</option>
+            <option value="Maths">Maths</option>
           </select>
         </div>
       </div>
 
+      {/* Optional Message */}
       <div className="mt-6">
         <label className="mb-2 block text-sm font-semibold text-[#2F3A3D]">
           Optional Message
@@ -192,24 +198,30 @@ export default function WaitingForm() {
         />
       </div>
 
+      {/* Success Message */}
       {status === "success" && (
         <div className="mt-6 flex items-center gap-3 rounded-2xl border border-green-200 bg-green-50 px-5 py-4 text-green-700">
-          <CheckCircle2 className="h-5 w-5" />
+          <CheckCircle2 className="h-5 w-5 shrink-0" />
+
           <span>
-            Thank you for joining our waiting list! We'll be in touch soon.
+            Thank you for registering with Pravi Learning Studio! We'll be in
+            touch soon.
           </span>
         </div>
       )}
 
+      {/* Error Message */}
       {status === "error" && (
         <div className="mt-6 flex items-center gap-3 rounded-2xl border border-red-200 bg-red-50 px-5 py-4 text-red-700">
-          <AlertCircle className="h-5 w-5" />
+          <AlertCircle className="h-5 w-5 shrink-0" />
+
           <span>
             Something went wrong. Please try again.
           </span>
         </div>
       )}
 
+      {/* Register Button */}
       <button
         type="submit"
         disabled={isDisabled}
@@ -218,15 +230,15 @@ export default function WaitingForm() {
         {loading ? (
           <>
             <Loader2 className="h-5 w-5 animate-spin" />
-            Joining...
+            Registering...
           </>
         ) : (
           <>
-            Join Waiting List
+            Register Now
             <ArrowRight className="h-5 w-5" />
           </>
         )}
       </button>
     </motion.form>
-      );
+  );
 }

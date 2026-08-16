@@ -8,7 +8,7 @@ import Courses from "./components/Courses";
 import ProgrammesFees from "./components/ProgrammesFees";
 import StudentJourney from "./components/StudentJourney";
 import Testimonials from "./components/Testimonials";
-import WaitingList from "./components/WaitingList";
+import WaitingList from "./components/Register";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WaveDivider from "./components/WaveDivider";

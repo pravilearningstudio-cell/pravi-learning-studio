@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Mail, HeartHandshake } from "lucide-react";
+import { Mail, ArrowRight } from "lucide-react";
 import { FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
@@ -28,16 +28,9 @@ export default function Contact() {
             </span>
 
             <h2 className="mt-6 text-4xl font-bold leading-tight text-[#2F3A3D] md:text-5xl">
-              We'd love to hear
-              <span className="text-[#7B93B0]"> from you.</span>
+              LET'S STAY
+              <span className="text-[#7B93B0]"> CONNECTED.</span>
             </h2>
-
-            <p className="mt-8 text-lg leading-8 text-gray-600">
-              Whether you're a parent, student, or educator, we'd love to hear
-              from you. Reach out with your questions, follow our journey, and
-              be among the first to receive updates as Pravi Learning Studio
-              prepares for its 2027 launch.
-            </p>
           </motion.div>
 
           {/* Mascot */}
@@ -64,7 +57,7 @@ export default function Contact() {
         </div>
 
         {/* Contact Cards */}
-        <div className="mt-24 grid gap-8 md:grid-cols-3">
+        <div className="mt-20 grid gap-8 md:grid-cols-3">
 
           {/* Email */}
           <motion.a
@@ -112,8 +105,9 @@ export default function Contact() {
             </p>
           </motion.a>
 
-          {/* Stay Connected */}
-          <motion.div
+          {/* Register */}
+          <motion.a
+            href="#register"
             whileHover={{
               y: -10,
               scale: 1.03,
@@ -121,20 +115,18 @@ export default function Contact() {
             className="rounded-3xl border border-white/40 bg-white/70 p-8 text-center shadow-xl backdrop-blur-xl"
           >
             <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-2xl bg-[#EEF4F1]">
-              <HeartHandshake className="h-8 w-8 text-[#7B93B0]" />
+              <ArrowRight className="h-8 w-8 text-[#7B93B0]" />
             </div>
 
             <h3 className="text-2xl font-bold text-[#2F3A3D]">
-              Stay Connected
+              Register Now
             </h3>
 
             <p className="mt-4 leading-7 text-gray-600">
-              Follow our journey as we prepare for our official 2027 launch.
-              We'll be sharing learning tips, educational resources, exciting
-              announcements, and behind-the-scenes moments from Pravi Learning
-              Studio.
+              Register your interest with Pravi Learning Studio and stay
+              connected with us for updates and learning opportunities.
             </p>
-          </motion.div>
+          </motion.a>
 
         </div>
 

@@ -45,10 +45,10 @@ export default function Navbar() {
           ))}
 
           <a
-            href="#waitlist"
+            href="#register"
             className="rounded-full bg-[#7B93B0] px-6 py-3 font-semibold text-white transition hover:scale-105"
           >
-            Join Waiting List
+            Register Now
           </a>
         </nav>
 
@@ -56,6 +56,7 @@ export default function Navbar() {
         <button
           onClick={() => setOpen(!open)}
           className="md:hidden"
+          aria-label={open ? "Close menu" : "Open menu"}
         >
           {open ? (
             <X className="h-7 w-7 text-[#2F3A3D]" />
@@ -87,11 +88,11 @@ export default function Navbar() {
               ))}
 
               <a
-                href="#waitlist"
+                href="#register"
                 onClick={() => setOpen(false)}
-                className="mt-4 rounded-full bg-[#7B93B0] px-6 py-4 text-center font-semibold text-white"
+                className="mt-4 rounded-full bg-[#7B93B0] px-6 py-4 text-center font-semibold text-white transition hover:scale-[1.02]"
               >
-                Join Waiting List
+                Register Now
               </a>
             </div>
           </motion.div>

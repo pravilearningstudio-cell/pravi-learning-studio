@@ -12,6 +12,7 @@ export default function Hero() {
     >
       {/* Background Blobs */}
       <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-[#A8BFA3]/20 blur-3xl"></div>
+
       <div className="absolute right-0 top-32 h-80 w-80 rounded-full bg-[#7B93B0]/20 blur-3xl"></div>
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 md:grid-cols-2">
@@ -23,7 +24,7 @@ export default function Hero() {
         >
           <span className="inline-flex items-center gap-2 rounded-full bg-[#F5EFE7] px-5 py-2 text-sm font-medium text-[#2F3A3D]">
             <Sparkles size={16} />
-            Launching in 2027
+            Registration Now Open
           </span>
 
           <h1 className="mt-8 text-5xl font-bold leading-tight text-[#2F3A3D] md:text-7xl">
@@ -41,13 +42,19 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <button className="rounded-full bg-[#7B93B0] px-8 py-4 font-semibold text-white transition hover:scale-105">
+            <a
+              href="#about"
+              className="rounded-full bg-[#7B93B0] px-8 py-4 font-semibold text-white transition hover:scale-105"
+            >
               Learn More
-            </button>
+            </a>
 
-            <button className="rounded-full border-2 border-[#7B93B0] px-8 py-4 font-semibold text-[#7B93B0] transition hover:bg-[#7B93B0] hover:text-white">
-              Join Waiting List
-            </button>
+            <a
+              href="#register"
+              className="rounded-full border-2 border-[#7B93B0] px-8 py-4 font-semibold text-[#7B93B0] transition hover:bg-[#7B93B0] hover:text-white"
+            >
+              Register Now
+            </a>
           </div>
         </motion.div>
 
@@ -59,7 +66,6 @@ export default function Hero() {
           className="flex justify-center"
         >
           <div className="relative w-full max-w-md rounded-[32px] border border-white/40 bg-white/70 p-10 shadow-2xl backdrop-blur-xl">
-
             {/* Floating Sparkles */}
             <motion.div
               animate={{
@@ -119,16 +125,24 @@ export default function Hero() {
               Turning "Huhs" into "Oohs"™
             </p>
 
+            {/* Registration Card */}
             <div className="mt-10 rounded-2xl bg-[#F5EFE7] p-6 text-center">
               <BookOpen className="mx-auto mb-3 h-8 w-8 text-[#7B93B0]" />
 
-              <p className="text-sm text-gray-500">
-                Official Launch
+              <p className="text-sm font-medium text-gray-500">
+                Ready to Start Learning?
               </p>
 
-              <h3 className="mt-2 text-5xl font-bold text-[#7B93B0]">
-                2027
+              <h3 className="mt-2 text-3xl font-bold text-[#7B93B0]">
+                Register Now
               </h3>
+
+              <a
+                href="#register"
+                className="mt-5 inline-block rounded-full bg-[#7B93B0] px-7 py-3 font-semibold text-white transition hover:scale-105"
+              >
+                Get Started
+              </a>
             </div>
           </div>
         </motion.div>
