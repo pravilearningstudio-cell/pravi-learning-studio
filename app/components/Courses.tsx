@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calculator, BookOpen, Landmark } from "lucide-react";
+import { Calculator, BookOpen, FlaskConical } from "lucide-react";
 
 export default function Courses() {
   const courses = [
@@ -13,18 +13,18 @@ export default function Courses() {
         "Build strong mathematical foundations through clear explanations, guided practice, and confidence-building lessons tailored for upper primary learners.",
     },
     {
-      icon: <Landmark className="h-10 w-10 text-[#7B93B0]" />,
-      title: "Primary Sejarah",
-      level: "Standard 4 • Standard 5 • Standard 6",
-      description:
-        "Make Sejarah easier to understand and remember through engaging explanations, key concepts, and effective revision techniques.",
-    },
-    {
-      icon: <BookOpen className="h-10 w-10 text-[#A8BFA3]" />,
+      icon: <BookOpen className="h-10 w-10 text-[#7B93B0]" />,
       title: "SPM Moral",
       level: "Form 4 • Form 5",
       description:
         "Master SPM Moral through value understanding, structured answering techniques, and focused exam preparation.",
+    },
+    {
+      icon: <FlaskConical className="h-10 w-10 text-[#A8BFA3]" />,
+      title: "SPM Chemistry",
+      level: "Form 4 • Form 5",
+      description:
+        "Build a strong understanding of Chemistry through clear explanations, concept-based learning, problem-solving practice, and focused SPM preparation.",
     },
   ];
 

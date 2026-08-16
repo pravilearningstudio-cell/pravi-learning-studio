@@ -107,6 +107,7 @@ export default function WaitingForm() {
       className="rounded-[2rem] border border-white/50 bg-white/70 p-8 shadow-2xl backdrop-blur-xl md:p-10"
     >
       <div className="grid gap-6 md:grid-cols-2">
+
         {/* Parent Name */}
         <div>
           <label className="mb-2 block text-sm font-semibold text-[#2F3A3D]">
@@ -172,12 +173,9 @@ export default function WaitingForm() {
             className={inputClasses}
           >
             <option value="">Select a subject</option>
-            <option value="Pendidikan Moral (SPM)">
-              Pendidikan Moral (SPM)
-            </option>
-            <option value="English">English</option>
-            <option value="Sejarah">Sejarah</option>
-            <option value="Maths">Maths</option>
+            <option value="Mathematics">Mathematics</option>
+            <option value="Pendidikan Moral">Pendidikan Moral</option>
+            <option value="Chemistry">Chemistry</option>
           </select>
         </div>
       </div>

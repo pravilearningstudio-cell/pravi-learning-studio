@@ -36,13 +36,31 @@ export default function WaitingList() {
 
             <p className="mt-8 text-lg leading-8 text-gray-600">
               Ready to begin your learning journey with Pravi Learning Studio?
-              Register your interest today and stay connected with us for
-              programme updates, learning opportunities, and important
-              announcements.
+              Register your interest today and let us know which programme
+              you are interested in.
             </p>
 
+            {/* Programmes */}
+            <div className="mt-8 rounded-3xl bg-white/70 p-6 shadow-lg backdrop-blur-xl">
+              <h3 className="text-xl font-bold text-[#2F3A3D]">
+                Our Programmes
+              </h3>
+
+              <ul className="mt-5 space-y-3 text-gray-600">
+                <li>
+                  🔢 <strong>Primary Mathematics</strong> — Standard 4–6
+                </li>
+                <li>
+                  📖 <strong>SPM Moral</strong> — Form 4–5
+                </li>
+                <li>
+                  🧪 <strong>SPM Chemistry</strong> — Form 4–5
+                </li>
+              </ul>
+            </div>
+
             {/* Why Join Us */}
-            <div className="mt-10 rounded-3xl bg-white/70 p-6 shadow-lg backdrop-blur-xl">
+            <div className="mt-6 rounded-3xl bg-white/70 p-6 shadow-lg backdrop-blur-xl">
               <h3 className="text-xl font-bold text-[#2F3A3D]">
                 Why join us?
               </h3>

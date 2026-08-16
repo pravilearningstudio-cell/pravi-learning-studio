@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import {
   Calculator,
   BookOpen,
-  HeartHandshake,
+  FlaskConical,
 } from "lucide-react";
 
 const programmes = [
@@ -20,17 +20,17 @@ const programmes = [
   },
   {
     icon: BookOpen,
-    title: "Primary Sejarah",
-    level: "Standard 4 • Standard 5 • Standard 6",
-    duration: "1 Hour",
+    title: "SPM Moral",
+    level: "Form 4 • Form 5",
+    duration: "1.5 Hours",
     schedule: "Once Weekly",
     lesson: "RM30 / lesson",
-    month: "RM120/ month",
+    month: "RM120 / month",
     color: "bg-[#F5EFE7]",
   },
   {
-    icon: HeartHandshake,
-    title: "SPM Moral",
+    icon: FlaskConical,
+    title: "SPM Chemistry",
     level: "Form 4 • Form 5",
     duration: "1.5 Hours",
     schedule: "Once Weekly",
