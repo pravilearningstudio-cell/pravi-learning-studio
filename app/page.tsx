@@ -7,8 +7,7 @@ import Method from "./components/Method";
 import Courses from "./components/Courses";
 import ProgrammesFees from "./components/ProgrammesFees";
 import StudentJourney from "./components/StudentJourney";
-import Testimonials from "./components/Testimonials";
-import WaitingList from "./components/Register";
+import Register from "./components/Register";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WaveDivider from "./components/WaveDivider";
@@ -40,10 +39,7 @@ export default function Home() {
       <StudentJourney />
       <WaveDivider />
 
-      <Testimonials />
-      <WaveDivider />
-
-      <WaitingList />
+      <Register />
       <WaveDivider />
 
       <Contact />
