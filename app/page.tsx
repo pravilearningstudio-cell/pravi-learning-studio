@@ -7,6 +7,7 @@ import Method from "./components/Method";
 import Courses from "./components/Courses";
 import ProgrammesFees from "./components/ProgrammesFees";
 import StudentJourney from "./components/StudentJourney";
+import MeetYourTutor from "./components/MeetYourTutor";
 import Register from "./components/Register";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -37,6 +38,9 @@ export default function Home() {
       <WaveDivider />
 
       <StudentJourney />
+      <WaveDivider />
+
+      <MeetYourTutor />
       <WaveDivider />
 
       <Register />
