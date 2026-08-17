@@ -17,17 +17,12 @@ export default function MeetYourTutor() {
       title: "I REMEMBER WHAT IT'S LIKE TO BE THE STUDENT.",
       text: (
         <>
-          I've recently been through the same kind of learning experience
-          myself, which means I understand the little things that can make
-          studying frustrating — confusing explanations, boring revision,
-          not knowing what an exam question actually wants, and that classic:
+          I understand how confusing topics, frustrating revision and tricky
+          exam questions can feel.
           <br />
-          <span className="mt-3 block font-semibold text-[#2F3A3D]">
-            “I KNOW THIS… SO WHY DID I GET IT WRONG?” 😭
-          </span>
           <br />
-          That perspective helps me teach from a student's point of view
-          rather than simply following a textbook.
+          That perspective helps me teach from a student's point of view —
+          not simply from a textbook.
         </>
       ),
     },
@@ -36,10 +31,10 @@ export default function MeetYourTutor() {
       title: "WE STUDY SMARTER, NOT JUST LONGER.",
       text: (
         <>
-          Instead of endless memorising, I use{" "}
+          I use{" "}
           <span className="font-semibold text-[#2F3A3D]">
             simple explanations, memory techniques, question strategies and
-            structured revision methods
+            structured revision
           </span>{" "}
           to help students learn more effectively.
         </>
@@ -50,16 +45,15 @@ export default function MeetYourTutor() {
       title: "EXAMS ARE PART OF THE PLAN.",
       text: (
         <>
-          Understanding the topic is important — but knowing{" "}
+          Understanding a topic matters — but knowing{" "}
           <span className="font-semibold text-[#2F3A3D]">
             how to use that knowledge in an exam
           </span>{" "}
           matters too.
           <br />
           <br />
-          I help students recognise question requirements, organise their
-          answers, understand answer structures and use exam techniques that
-          can help them present what they know more effectively.
+          Students learn how to recognise questions, structure answers and
+          apply what they know.
         </>
       ),
     },
@@ -72,11 +66,11 @@ export default function MeetYourTutor() {
           feeling embarrassed.
           <br />
           <br />
-          Because honestly,{" "}
+          Because{" "}
           <span className="font-semibold text-[#2F3A3D]">
             “I don't understand”
           </span>{" "}
-          is not a bad answer.
+          isn't a bad answer.
           <br />
           <br />
           It's where learning starts. 🤍
@@ -88,17 +82,17 @@ export default function MeetYourTutor() {
   return (
     <section
       id="tutor"
-      className="overflow-hidden bg-[#FAF9F6] py-24 sm:py-28"
+      className="overflow-hidden bg-[#FAF9F6] py-20 sm:py-24"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
         {/* SECTION HEADER */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6 }}
-          className="mx-auto mb-16 max-w-3xl text-center"
+          className="mx-auto mb-14 max-w-3xl text-center"
         >
           <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#7B93B0]">
             Meet Your Tutor 👋🏻✨
@@ -108,15 +102,17 @@ export default function MeetYourTutor() {
             Hi, I’m Pravi!
           </h2>
 
-          <p className="mt-6 text-lg leading-8 text-[#2F3A3D]/75">
-            Tutor. Founder. And probably the person who has said
-            <span className="font-semibold"> “WAIT, I DON’T GET IT” </span>
+          <p className="mt-5 text-lg leading-8 text-[#2F3A3D]/75">
+            Tutor. Founder. And probably the person who has said{" "}
+            <span className="font-semibold text-[#2F3A3D]">
+              “WAIT, I DON’T GET IT”
+            </span>{" "}
             more times than I’d like to admit. 😭
           </p>
         </motion.div>
 
         {/* INTRO + MAIN PHOTO */}
-        <div className="grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
+        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
 
           {/* PHOTO */}
           <motion.div
@@ -136,13 +132,13 @@ export default function MeetYourTutor() {
                   src="/tutor/tutor-huh-ooh.png.png"
                   alt="Pravi, founder and tutor of Pravi Learning Studio"
                   fill
-                  className="object-cover"
                   priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
                 />
               </div>
             </div>
 
-            {/* Small label */}
             <div className="absolute -bottom-5 left-6 rounded-full border border-[#A8BFA3]/40 bg-white px-5 py-3 text-sm font-semibold text-[#2F3A3D] shadow-lg">
               Founder & Tutor 🌿
             </div>
@@ -159,15 +155,14 @@ export default function MeetYourTutor() {
               And honestly? That’s exactly why I love teaching.
             </p>
 
-            <p className="mt-6 text-lg leading-8 text-[#2F3A3D]/75 sm:text-xl">
+            <p className="mt-5 text-lg leading-8 text-[#2F3A3D]/75 sm:text-xl">
               I’m still close enough to the student experience to understand
-              what it actually feels like to sit in front of a topic and
-              think:
+              what it feels like to sit in front of a topic and think:
             </p>
 
-            <div className="my-8 rounded-2xl border border-[#7B93B0]/20 bg-[#EEF4F1] px-6 py-5">
+            <div className="my-6 rounded-2xl border border-[#7B93B0]/20 bg-[#EEF4F1] px-6 py-5">
               <p className="text-xl font-semibold leading-8 text-[#2F3A3D]">
-                “Okay… I read it. I understood nothing.” 💀
+                “Okay… I read it. I understood nothing.” 😭
               </p>
             </div>
 
@@ -176,27 +171,27 @@ export default function MeetYourTutor() {
               students and hoping it sticks.
             </p>
 
-            <p className="mt-6 text-lg leading-8 text-[#2F3A3D]/75 sm:text-xl">
+            <p className="mt-5 text-lg leading-8 text-[#2F3A3D]/75 sm:text-xl">
               I focus on making lessons{" "}
               <span className="font-semibold text-[#2F3A3D]">
                 simple, relatable, interactive and exam-focused
               </span>{" "}
               — so students understand{" "}
               <em>why</em> something works, know{" "}
-              <em>how</em> to answer it, and actually remember it later.
+              <em>how</em> to answer it, and remember it later.
             </p>
           </motion.div>
         </div>
 
         {/* WHY ME */}
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.6 }}
-          className="mt-32"
+          className="mt-24"
         >
-          <div className="mx-auto mb-14 max-w-2xl text-center">
+          <div className="mx-auto mb-10 max-w-2xl text-center">
             <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-[#7B93B0]">
               Why Me? 🧠
             </p>
@@ -206,28 +201,28 @@ export default function MeetYourTutor() {
             </h3>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2">
+          <div className="grid gap-5 md:grid-cols-2">
             {reasons.map((reason, index) => (
               <motion.div
                 key={reason.title}
-                initial={{ opacity: 0, y: 25 }}
+                initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, amount: 0.15 }}
                 transition={{
                   duration: 0.5,
                   delay: index * 0.08,
                 }}
-                className="rounded-3xl border border-[#A8BFA3]/25 bg-white p-7 shadow-[0_12px_40px_rgba(47,58,61,0.06)] transition-transform duration-300 hover:-translate-y-1"
+                className="rounded-3xl border border-[#A8BFA3]/25 bg-white p-6 shadow-[0_12px_40px_rgba(47,58,61,0.06)] transition-transform duration-300 hover:-translate-y-1"
               >
-                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-2xl bg-[#EEF4F1] text-[#7B93B0]">
+                <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-[#EEF4F1] text-[#7B93B0]">
                   {reason.icon}
                 </div>
 
-                <h4 className="text-lg font-bold leading-7 text-[#2F3A3D]">
+                <h4 className="text-base font-bold leading-6 text-[#2F3A3D]">
                   {reason.title}
                 </h4>
 
-                <div className="mt-4 text-base leading-7 text-[#2F3A3D]/70">
+                <div className="mt-3 text-sm leading-6 text-[#2F3A3D]/70">
                   {reason.text}
                 </div>
               </motion.div>
@@ -236,7 +231,7 @@ export default function MeetYourTutor() {
         </motion.div>
 
         {/* SECOND PHOTO + PARENT MESSAGE */}
-        <div className="mt-32 grid items-center gap-14 lg:grid-cols-2 lg:gap-20">
+        <div className="mt-24 grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
 
           {/* TEXT */}
           <motion.div
@@ -246,7 +241,7 @@ export default function MeetYourTutor() {
             transition={{ duration: 0.7 }}
             className="order-2 lg:order-1"
           >
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.25em] text-[#7B93B0]">
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.25em] text-[#7B93B0]">
               And for the parents… 👀
             </p>
 
@@ -254,42 +249,37 @@ export default function MeetYourTutor() {
               A younger tutor can bring a different perspective.
             </h3>
 
-            <p className="mt-6 text-lg leading-8 text-[#2F3A3D]/75">
+            <p className="mt-5 text-lg leading-8 text-[#2F3A3D]/75">
               Being a younger tutor doesn’t mean I take teaching any less
               seriously.
             </p>
 
-            <p className="mt-5 text-lg leading-8 text-[#2F3A3D]/75">
-              In fact, being close to the student experience gives me a
-              different advantage:
+            <p className="mt-4 text-lg leading-8 text-[#2F3A3D]/75">
+              Being close to the student experience gives me a different
+              advantage:{" "}
               <span className="font-semibold text-[#2F3A3D]">
-                {" "}
                 I understand how students learn today.
               </span>
             </p>
 
-            <p className="mt-5 text-lg leading-8 text-[#2F3A3D]/75">
-              My goal isn't simply to finish a syllabus.
-            </p>
-
-            <div className="mt-6 rounded-2xl bg-[#EEF4F1] p-6">
+            <div className="mt-5 rounded-2xl bg-[#EEF4F1] p-5">
               <p className="text-lg font-semibold leading-8 text-[#2F3A3D]">
-                It’s to help students build understanding, confidence, exam
-                skills and better study habits that they can carry into their
-                own revision.
+                My goal isn't simply to finish a syllabus. It’s to help
+                students build understanding, confidence, exam skills and
+                better study habits.
               </p>
             </div>
 
-            <p className="mt-6 text-lg leading-8 text-[#2F3A3D]/75">
+            <p className="mt-5 text-lg leading-8 text-[#2F3A3D]/75">
               So while I may be younger than the tutor you expected…
             </p>
 
-            <p className="mt-4 text-xl font-bold leading-8 text-[#2F3A3D]">
+            <p className="mt-3 text-xl font-bold leading-8 text-[#2F3A3D]">
               I might just be closer to the student you’re trying to help. 🤍
             </p>
           </motion.div>
 
-          {/* PHOTO */}
+          {/* SECOND PHOTO */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -305,6 +295,7 @@ export default function MeetYourTutor() {
                   src="/tutor/tutor-study.png.jpeg"
                   alt="Pravi preparing study materials"
                   fill
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"
                 />
               </div>
@@ -318,39 +309,42 @@ export default function MeetYourTutor() {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.7 }}
-          className="relative mt-32 overflow-hidden rounded-[2.5rem] bg-[#2F3A3D] px-8 py-16 text-center sm:px-12"
+          className="relative mt-24 overflow-hidden rounded-[2.5rem] bg-[#2F3A3D] px-8 py-14 text-center sm:px-12"
         >
           <div className="absolute -left-16 -top-16 h-40 w-40 rounded-full bg-[#A8BFA3]/20" />
+
           <div className="absolute -bottom-20 -right-10 h-48 w-48 rounded-full bg-[#7B93B0]/20" />
 
           <div className="relative">
-            <div className="mb-5 flex justify-center">
-              <Sparkles className="h-8 w-8 text-[#A8BFA3]" />
+            <div className="mb-4 flex justify-center">
+              <Sparkles className="h-7 w-7 text-[#A8BFA3]" />
             </div>
 
             <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#A8BFA3]">
               The P.L.S. Promise
             </p>
 
-            <h3 className="mt-8 text-2xl font-medium text-white sm:text-3xl">
+            <h3 className="mt-7 text-2xl font-medium text-white sm:text-3xl">
               You bring the
             </h3>
 
-            <p className="mt-2 text-4xl font-black text-white sm:text-6xl">
+            <p className="mt-1 text-4xl font-black text-white sm:text-5xl">
               “HUH?”
             </p>
 
-            <div className="my-7 text-2xl text-[#A8BFA3]">↓</div>
+            <div className="my-5 text-2xl text-[#A8BFA3]">
+              ↓
+            </div>
 
             <h3 className="text-2xl font-medium text-white sm:text-3xl">
               I’ll bring the
             </h3>
 
-            <p className="mt-2 text-4xl font-black text-[#A8BFA3] sm:text-6xl">
+            <p className="mt-1 text-4xl font-black text-[#A8BFA3] sm:text-5xl">
               “OHHHH.” 💡
             </p>
 
-            <p className="mx-auto mt-10 max-w-2xl text-lg leading-8 text-white/70">
+            <p className="mx-auto mt-8 max-w-2xl text-base leading-7 text-white/70 sm:text-lg">
               Because your tutor shouldn't just know the subject.
               <br />
               <span className="font-semibold text-white">
@@ -358,17 +352,18 @@ export default function MeetYourTutor() {
               </span>
             </p>
 
-            <div className="mx-auto mt-10 h-px max-w-xs bg-white/10" />
+            <div className="mx-auto mt-8 h-px max-w-xs bg-white/10" />
 
-            <p className="mt-8 text-lg text-white/80">
+            <p className="mt-6 text-lg text-white/80">
               Welcome to Pravi Learning Studio. 🤍
             </p>
 
-            <p className="mt-3 text-xl font-semibold text-[#A8BFA3]">
+            <p className="mt-2 text-lg font-semibold text-[#A8BFA3]">
               Turning your “HUHs?” into “OOHs!” ✨
             </p>
           </div>
         </motion.div>
+
       </div>
     </section>
   );
