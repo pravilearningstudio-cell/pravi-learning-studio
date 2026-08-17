@@ -14,8 +14,8 @@ const programmes = [
     level: "Standard 4 • Standard 5 • Standard 6",
     duration: "1 Hour",
     schedule: "Once Weekly",
-    lesson: "RM30 / lesson",
-    month: "RM120/ month",
+    lesson: "RM20 / lesson",
+    month: "RM80 / month",
     color: "bg-[#EEF4F1]",
   },
   {
@@ -24,8 +24,8 @@ const programmes = [
     level: "Form 4 • Form 5",
     duration: "1.5 Hours",
     schedule: "Once Weekly",
-    lesson: "RM30 / lesson",
-    month: "RM120 / month",
+    lesson: "RM25 / lesson",
+    month: "RM100 / month",
     color: "bg-[#F5EFE7]",
   },
   {
@@ -34,8 +34,8 @@ const programmes = [
     level: "Form 4 • Form 5",
     duration: "1.5 Hours",
     schedule: "Once Weekly",
-    lesson: "RM30 / lesson",
-    month: "RM120 / month",
+    lesson: "RM25 / lesson",
+    month: "RM100 / month",
     color: "bg-[#EEF4F1]",
   },
 ];
