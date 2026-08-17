@@ -133,7 +133,7 @@ export default function MeetYourTutor() {
             <div className="relative overflow-hidden rounded-[2rem] border border-[#A8BFA3]/30 bg-white p-3 shadow-[0_20px_60px_rgba(47,58,61,0.10)]">
               <div className="relative aspect-[16/10] overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src="/tutor/tutor-huh-ooh.png"
+                  src="/tutor/tutor-huh-ooh.png.png"
                   alt="Pravi, founder and tutor of Pravi Learning Studio"
                   fill
                   className="object-cover"
@@ -302,7 +302,7 @@ export default function MeetYourTutor() {
             <div className="relative overflow-hidden rounded-[2rem] border border-[#A8BFA3]/30 bg-white p-3 shadow-[0_20px_60px_rgba(47,58,61,0.10)]">
               <div className="relative aspect-[16/11] overflow-hidden rounded-[1.5rem]">
                 <Image
-                  src="/tutor/tutor-study.png"
+                  src="/tutor/tutor-study.png.jpeg"
                   alt="Pravi preparing study materials"
                   fill
                   className="object-cover"
