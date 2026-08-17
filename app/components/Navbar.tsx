@@ -11,6 +11,7 @@ export default function Navbar() {
     { name: "Home", href: "#home" },
     { name: "About", href: "#about" },
     { name: "Programmes", href: "#courses" },
+    { name: "Tutor", href: "#tutor" },
     { name: "Contact", href: "#contact" },
   ];
 
