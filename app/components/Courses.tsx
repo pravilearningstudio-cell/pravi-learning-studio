@@ -1,16 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Calculator, BookOpen, Landmark } from "lucide-react";
+import { BookOpen, Landmark } from "lucide-react";
 
 export default function Courses() {
   const courses = [
     {
-      icon: <Calculator className="h-10 w-10 text-[#A8BFA3]" />,
-      title: "Primary Mathematics",
+      icon: <Landmark className="h-10 w-10 text-[#A8BFA3]" />,
+      title: "Primary Sejarah",
       level: "Standard 4 • Standard 5 • Standard 6",
       description:
-        "Build strong mathematical foundations through clear explanations, guided practice, and confidence-building lessons tailored for upper primary learners.",
+        "Make Sejarah easier to understand through clear explanations, engaging storytelling, timeline-based learning, and guided practice designed for upper primary learners.",
     },
     {
       icon: <BookOpen className="h-10 w-10 text-[#7B93B0]" />,
@@ -18,13 +18,6 @@ export default function Courses() {
       level: "Form 4 • Form 5",
       description:
         "Master SPM Moral through value understanding, structured answering techniques, and focused exam preparation.",
-    },
-    {
-      icon: <Landmark className="h-10 w-10 text-[#A8BFA3]" />,
-      title: "SPM Sejarah",
-      level: "Form 4 • Form 5",
-      description:
-        "Build a strong understanding of Sejarah through clear explanations, timeline-based learning, structured answering techniques, and focused SPM preparation.",
     },
   ];
 
@@ -56,7 +49,7 @@ export default function Courses() {
           </p>
         </motion.div>
 
-        <div className="mx-auto mt-20 grid max-w-5xl gap-8 md:grid-cols-3">
+        <div className="mx-auto mt-20 grid max-w-4xl gap-8 md:grid-cols-2">
           {courses.map((course, index) => (
             <motion.div
               key={course.title}

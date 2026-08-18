@@ -48,13 +48,11 @@ export default function WaitingList() {
 
               <ul className="mt-5 space-y-3 text-gray-600">
                 <li>
-                  🔢 <strong>Primary Mathematics</strong> — Standard 4–6
+                  📚 <strong>Primary Sejarah</strong> — Standard 4–6
                 </li>
+
                 <li>
                   📖 <strong>SPM Moral</strong> — Form 4–5
-                </li>
-                <li>
-                  📚 <strong>SPM Sejarah</strong> — Form 4–5
                 </li>
               </ul>
             </div>
@@ -66,10 +64,21 @@ export default function WaitingList() {
               </h3>
 
               <ul className="mt-5 space-y-3 text-gray-600">
-                <li>✨ Learning designed around understanding</li>
-                <li>📚 Clear and meaningful lessons</li>
-                <li>🎓 Student-focused guidance</li>
-                <li>💚 A learning environment that builds confidence</li>
+                <li>
+                  ✨ Learning designed around understanding
+                </li>
+
+                <li>
+                  📚 Clear and meaningful lessons
+                </li>
+
+                <li>
+                  🎓 Student-focused guidance
+                </li>
+
+                <li>
+                  💚 A learning environment that builds confidence
+                </li>
               </ul>
             </div>
 

@@ -2,15 +2,14 @@
 
 import { motion } from "framer-motion";
 import {
-  Calculator,
   BookOpen,
   Landmark,
 } from "lucide-react";
 
 const programmes = [
   {
-    icon: Calculator,
-    title: "Primary Mathematics",
+    icon: BookOpen,
+    title: "Primary Sejarah",
     level: "Standard 4 • Standard 5 • Standard 6",
     duration: "1 Hour",
     schedule: "Once Weekly",
@@ -19,7 +18,7 @@ const programmes = [
     color: "bg-[#EEF4F1]",
   },
   {
-    icon: BookOpen,
+    icon: Landmark,
     title: "SPM Moral",
     level: "Form 4 • Form 5",
     duration: "1.5 Hours",
@@ -27,16 +26,6 @@ const programmes = [
     lesson: "RM25 / lesson",
     month: "RM100 / month",
     color: "bg-[#F5EFE7]",
-  },
-  {
-    icon: Landmark,
-    title: "SPM Sejarah",
-    level: "Form 4 • Form 5",
-    duration: "1.5 Hours",
-    schedule: "Once Weekly",
-    lesson: "RM25 / lesson",
-    month: "RM100 / month",
-    color: "bg-[#EEF4F1]",
   },
 ];
 
@@ -61,7 +50,9 @@ export default function TuitionFees() {
 
           <h2 className="mt-6 text-4xl font-bold text-[#2F3A3D] md:text-5xl">
             Affordable Learning,
-            <span className="text-[#7B93B0]"> Exceptional Value</span>
+            <span className="text-[#7B93B0]">
+              {" "}Exceptional Value
+            </span>
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
@@ -71,7 +62,7 @@ export default function TuitionFees() {
           </p>
         </motion.div>
 
-        <div className="mx-auto mt-16 grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mx-auto mt-16 grid max-w-4xl gap-8 md:grid-cols-2">
           {programmes.map((item, index) => {
             const Icon = item.icon;
 

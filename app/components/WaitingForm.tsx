@@ -173,9 +173,12 @@ export default function WaitingForm() {
             className={inputClasses}
           >
             <option value="">Select a subject</option>
-            <option value="Mathematics">Mathematics</option>
-            <option value="Pendidikan Moral">Pendidikan Moral</option>
-            <option value="Sejarah">Sejarah</option>
+            <option value="Primary Sejarah">
+              Primary Sejarah — Standard 4–6
+            </option>
+            <option value="Pendidikan Moral (SPM)">
+              Pendidikan Moral (SPM) — Form 4–5
+            </option>
           </select>
         </div>
       </div>
