@@ -13,12 +13,12 @@ export default function WaitingList() {
       {/* Background Blobs */}
       <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-[#A8BFA3]/20 blur-3xl" />
 
-      <div className="absolute right-0 bottom-10 h-80 w-80 rounded-full bg-[#7B93B0]/20 blur-3xl" />
+      <div className="absolute bottom-10 right-0 h-80 w-80 rounded-full bg-[#7B93B0]/20 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-6">
         <div className="grid items-center gap-16 lg:grid-cols-2">
 
-          {/* Left Side */}
+          {/* LEFT SIDE */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -30,59 +30,71 @@ export default function WaitingList() {
             </span>
 
             <h2 className="mt-6 text-4xl font-bold leading-tight text-[#2F3A3D] md:text-5xl">
-              Be a part of
-              <span className="text-[#7B93B0]"> us now.</span>
+              Ready to make
+              <span className="text-[#7B93B0]"> learning click?</span>
             </h2>
 
-            <p className="mt-8 text-lg leading-8 text-gray-600">
-              Ready to begin your learning journey with Pravi Learning Studio?
-              Register your interest today and let us know which programme
-              you are interested in.
+            <p className="mt-6 max-w-xl text-lg leading-8 text-gray-600">
+              Interested in joining P.L.S.? Register your interest and
+              tell us which subject you'd like to learn.
             </p>
 
-            {/* Programmes */}
-            <div className="mt-8 rounded-3xl bg-white/70 p-6 shadow-lg backdrop-blur-xl">
+            {/* PROGRAMMES */}
+            <div className="mt-8 rounded-3xl bg-white/80 p-6 shadow-lg backdrop-blur-xl">
               <h3 className="text-xl font-bold text-[#2F3A3D]">
-                Our Programmes
+                Currently offered
               </h3>
 
-              <ul className="mt-5 space-y-3 text-gray-600">
-                <li>
-                  📚 <strong>Primary Sejarah</strong> — Standard 4–6
-                </li>
+              <div className="mt-5 space-y-4">
+                <div className="flex items-center gap-4">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#EEF4F1] text-xl">
+                    🏛️
+                  </div>
 
-                <li>
-                  📖 <strong>SPM Moral</strong> — Form 4–5
-                </li>
+                  <div>
+                    <p className="font-bold text-[#2F3A3D]">
+                      SPM Sejarah
+                    </p>
+
+                    <p className="text-sm text-gray-500">
+                      Form 4 • Form 5
+                    </p>
+                  </div>
+                </div>
+
+                <div className="flex items-center gap-4">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#F5EFE7] text-xl">
+                    📖
+                  </div>
+
+                  <div>
+                    <p className="font-bold text-[#2F3A3D]">
+                      SPM Pendidikan Moral
+                    </p>
+
+                    <p className="text-sm text-gray-500">
+                      Form 4 • Form 5
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* WHY P.L.S. */}
+            <div className="mt-6 rounded-3xl bg-[#EEF4F1]/80 p-6">
+              <h3 className="text-xl font-bold text-[#2F3A3D]">
+                Why P.L.S.? 🌿
+              </h3>
+
+              <ul className="mt-4 space-y-3 text-gray-600">
+                <li>✨ Understanding before memorising</li>
+                <li>📚 Clear, relatable lessons</li>
+                <li>🎯 Exam-focused guidance</li>
+                <li>💚 A space where questions are welcome</li>
               </ul>
             </div>
 
-            {/* Why Join Us */}
-            <div className="mt-6 rounded-3xl bg-white/70 p-6 shadow-lg backdrop-blur-xl">
-              <h3 className="text-xl font-bold text-[#2F3A3D]">
-                Why join us?
-              </h3>
-
-              <ul className="mt-5 space-y-3 text-gray-600">
-                <li>
-                  ✨ Learning designed around understanding
-                </li>
-
-                <li>
-                  📚 Clear and meaningful lessons
-                </li>
-
-                <li>
-                  🎓 Student-focused guidance
-                </li>
-
-                <li>
-                  💚 A learning environment that builds confidence
-                </li>
-              </ul>
-            </div>
-
-            {/* Mascot */}
+            {/* MASCOT */}
             <motion.div
               animate={{ y: [0, -10, 0] }}
               transition={{
@@ -90,19 +102,19 @@ export default function WaitingList() {
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="mt-12 flex justify-center lg:justify-start"
+              className="mt-10 flex justify-center lg:justify-start"
             >
               <Image
                 src="/mascot/wave.png"
-                alt="Pravi Mascot"
-                width={280}
-                height={280}
+                alt="Pravi Learning Studio mascot"
+                width={220}
+                height={220}
                 className="drop-shadow-2xl"
               />
             </motion.div>
           </motion.div>
 
-          {/* Right Side */}
+          {/* RIGHT SIDE — FORM */}
           <motion.div
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}

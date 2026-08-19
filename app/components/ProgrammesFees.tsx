@@ -8,18 +8,18 @@ import {
 
 const programmes = [
   {
-    icon: BookOpen,
-    title: "Primary Sejarah",
-    level: "Standard 4 • Standard 5 • Standard 6",
-    duration: "1 Hour",
+    icon: Landmark,
+    title: "SPM Sejarah",
+    level: "Form 4 • Form 5",
+    duration: "1.5 Hours",
     schedule: "Once Weekly",
-    lesson: "RM20 / lesson",
-    month: "RM80 / month",
+    lesson: "RM25 / lesson",
+    month: "RM100 / month",
     color: "bg-[#EEF4F1]",
   },
   {
-    icon: Landmark,
-    title: "SPM Moral",
+    icon: BookOpen,
+    title: "SPM Pendidikan Moral",
     level: "Form 4 • Form 5",
     duration: "1.5 Hours",
     schedule: "Once Weekly",
@@ -37,6 +37,7 @@ export default function TuitionFees() {
     >
       <div className="mx-auto max-w-7xl px-6">
 
+        {/* HEADER */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -49,19 +50,19 @@ export default function TuitionFees() {
           </span>
 
           <h2 className="mt-6 text-4xl font-bold text-[#2F3A3D] md:text-5xl">
-            Affordable Learning,
+            Simple Fees,
             <span className="text-[#7B93B0]">
-              {" "}Exceptional Value
+              {" "}Meaningful Learning
             </span>
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            We believe quality education should be accessible.
-            Our small-group classes provide personalised learning
-            at affordable monthly rates.
+            Quality, focused tuition in small groups —
+            without making learning feel overwhelming.
           </p>
         </motion.div>
 
+        {/* PROGRAMMES */}
         <div className="mx-auto mt-16 grid max-w-4xl gap-8 md:grid-cols-2">
           {programmes.map((item, index) => {
             const Icon = item.icon;
@@ -77,17 +78,19 @@ export default function TuitionFees() {
                   delay: index * 0.1,
                 }}
                 whileHover={{
-                  y: -10,
-                  scale: 1.03,
+                  y: -8,
+                  scale: 1.02,
                 }}
                 className="rounded-3xl border border-white/40 bg-white p-8 shadow-xl"
               >
+                {/* ICON */}
                 <div
                   className={`mb-6 flex h-16 w-16 items-center justify-center rounded-2xl ${item.color}`}
                 >
                   <Icon className="h-8 w-8 text-[#7B93B0]" />
                 </div>
 
+                {/* TITLE */}
                 <h3 className="text-2xl font-bold text-[#2F3A3D]">
                   {item.title}
                 </h3>
@@ -96,6 +99,7 @@ export default function TuitionFees() {
                   {item.level}
                 </p>
 
+                {/* DETAILS */}
                 <div className="mt-6 space-y-3 text-gray-600">
                   <p>
                     <strong>Duration:</strong> {item.duration}
@@ -104,12 +108,19 @@ export default function TuitionFees() {
                   <p>
                     <strong>Schedule:</strong> {item.schedule}
                   </p>
+                </div>
 
-                  <p className="pt-2 text-xl font-bold text-[#7B93B0]">
+                {/* PRICE */}
+                <div className="mt-7 border-t border-[#EEF4F1] pt-6">
+                  <p className="text-sm font-medium text-gray-500">
+                    From
+                  </p>
+
+                  <p className="mt-1 text-xl font-bold text-[#7B93B0]">
                     {item.lesson}
                   </p>
 
-                  <p className="text-2xl font-bold text-[#2F3A3D]">
+                  <p className="mt-1 text-3xl font-bold text-[#2F3A3D]">
                     {item.month}
                   </p>
                 </div>
@@ -118,22 +129,21 @@ export default function TuitionFees() {
           })}
         </div>
 
+        {/* SMALL GROUP MESSAGE */}
         <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3 }}
-          className="mx-auto mt-16 max-w-4xl rounded-3xl bg-[#EEF4F1] p-10 text-center"
+          className="mx-auto mt-14 max-w-4xl rounded-3xl bg-[#EEF4F1] px-8 py-8 text-center"
         >
-          <h3 className="text-3xl font-bold text-[#2F3A3D]">
-            Small Group Learning
+          <h3 className="text-2xl font-bold text-[#2F3A3D]">
+            Small Groups. More Attention. 🌿
           </h3>
 
-          <p className="mt-5 text-lg leading-8 text-gray-600">
-            Every class is conducted in a small-group setting,
-            allowing students to receive personalised guidance,
-            ask questions confidently, and learn in a supportive
-            environment.
+          <p className="mx-auto mt-3 max-w-2xl text-base leading-7 text-gray-600">
+            Small-group classes give students the space to ask questions,
+            receive guidance, and learn at a comfortable pace.
           </p>
         </motion.div>
 

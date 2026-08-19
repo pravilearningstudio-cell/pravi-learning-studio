@@ -26,7 +26,7 @@ const initialForm: FormData = {
   message: "",
 };
 
-export default function WaitingForm() {
+export default function RegisterForm() {
   const [form, setForm] = useState<FormData>(initialForm);
   const [loading, setLoading] = useState(false);
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
@@ -154,7 +154,7 @@ export default function WaitingForm() {
             required
             value={form.child}
             onChange={handleChange}
-            placeholder="e.g. 8 years old / Year 3"
+            placeholder="e.g. Form 4 / Form 5"
             className={inputClasses}
           />
         </div>
@@ -173,9 +173,11 @@ export default function WaitingForm() {
             className={inputClasses}
           >
             <option value="">Select a subject</option>
-            <option value="Primary Sejarah">
-              Primary Sejarah — Standard 4–6
+
+            <option value="SPM Sejarah">
+              SPM Sejarah — Form 4–5
             </option>
+
             <option value="Pendidikan Moral (SPM)">
               Pendidikan Moral (SPM) — Form 4–5
             </option>

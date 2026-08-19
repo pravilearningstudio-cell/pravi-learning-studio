@@ -46,9 +46,9 @@ export const metadata: Metadata = {
   applicationName: "Pravi Learning Studio",
 
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/favicon.ico",
+    icon: "/logo/Learning Studio Logo Design.png",
+    shortcut: "/logo/Learning Studio Logo Design.png",
+    apple: "/logo/Learning Studio Logo Design.png",
   },
 
   openGraph: {

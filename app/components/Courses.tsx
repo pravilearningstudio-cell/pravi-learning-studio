@@ -7,17 +7,17 @@ export default function Courses() {
   const courses = [
     {
       icon: <Landmark className="h-10 w-10 text-[#A8BFA3]" />,
-      title: "Primary Sejarah",
-      level: "Standard 4 • Standard 5 • Standard 6",
+      title: "SPM Sejarah",
+      level: "Form 4 • Form 5",
       description:
-        "Make Sejarah easier to understand through clear explanations, engaging storytelling, timeline-based learning, and guided practice designed for upper primary learners.",
+        "Make SPM Sejarah easier to understand through clear explanations, engaging storytelling, visual timelines, structured notes, and guided exam practice designed to help students remember key facts and answer with confidence.",
     },
     {
       icon: <BookOpen className="h-10 w-10 text-[#7B93B0]" />,
-      title: "SPM Moral",
+      title: "SPM Pendidikan Moral",
       level: "Form 4 • Form 5",
       description:
-        "Master SPM Moral through value understanding, structured answering techniques, and focused exam preparation.",
+        "Master SPM Pendidikan Moral through clear understanding of nilai, structured answering techniques, real-life examples, and focused exam preparation to build confidence in every question.",
     },
   ];
 
