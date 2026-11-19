@@ -1,3 +1,4 @@
+
 "use client";
 
 import Image from "next/image";
@@ -42,32 +43,39 @@ export default function WaitingList() {
             {/* PROGRAMMES */}
             <div className="mt-8 rounded-3xl bg-white/80 p-6 shadow-lg backdrop-blur-xl">
               <h3 className="text-xl font-bold text-[#2F3A3D]">
-                Currently offered
+                Currently Offered
               </h3>
 
-              <div className="mt-5 space-y-4">
+              <div className="mt-5 space-y-5">
+
+                {/* SEJARAH */}
                 <div className="flex items-center gap-4">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#EEF4F1] text-xl">
                     🏛️
                   </div>
 
-                  <div>
+                  <div className="flex-1">
                     <p className="font-bold text-[#2F3A3D]">
-                      SPM Sejarah
+                      Sejarah
                     </p>
 
                     <p className="text-sm text-gray-500">
-                      Form 4 • Form 5
+                      Form 1 • Form 2 • Form 3
+                    </p>
+
+                    <p className="mt-1 text-sm font-semibold text-[#7B93B0]">
+                      RM60 / month
                     </p>
                   </div>
                 </div>
 
+                {/* PENDIDIKAN MORAL */}
                 <div className="flex items-center gap-4">
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#F5EFE7] text-xl">
                     📖
                   </div>
 
-                  <div>
+                  <div className="flex-1">
                     <p className="font-bold text-[#2F3A3D]">
                       SPM Pendidikan Moral
                     </p>
@@ -75,8 +83,13 @@ export default function WaitingList() {
                     <p className="text-sm text-gray-500">
                       Form 4 • Form 5
                     </p>
+
+                    <p className="mt-1 text-sm font-semibold text-[#7B93B0]">
+                      RM70 / month
+                    </p>
                   </div>
                 </div>
+
               </div>
             </div>
 

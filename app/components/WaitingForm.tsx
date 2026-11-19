@@ -1,3 +1,4 @@
+
 "use client";
 
 import { FormEvent, useMemo, useState } from "react";
@@ -154,7 +155,7 @@ export default function RegisterForm() {
             required
             value={form.child}
             onChange={handleChange}
-            placeholder="e.g. Form 4 / Form 5"
+            placeholder="e.g. Form 1 / Form 3 / Form 5"
             className={inputClasses}
           />
         </div>
@@ -174,12 +175,24 @@ export default function RegisterForm() {
           >
             <option value="">Select a subject</option>
 
-            <option value="SPM Sejarah">
-              SPM Sejarah — Form 4–5
+            <option value="Sejarah (Form 1)">
+              Sejarah — Form 1
             </option>
 
-            <option value="Pendidikan Moral (SPM)">
-              Pendidikan Moral (SPM) — Form 4–5
+            <option value="Sejarah (Form 2)">
+              Sejarah — Form 2
+            </option>
+
+            <option value="Sejarah (Form 3)">
+              Sejarah — Form 3
+            </option>
+
+            <option value="SPM Pendidikan Moral (Form 4)">
+              SPM Pendidikan Moral — Form 4
+            </option>
+
+            <option value="SPM Pendidikan Moral (Form 5)">
+              SPM Pendidikan Moral — Form 5
             </option>
           </select>
         </div>

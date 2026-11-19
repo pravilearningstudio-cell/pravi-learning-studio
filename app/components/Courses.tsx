@@ -1,3 +1,4 @@
+
 "use client";
 
 import { motion } from "framer-motion";
@@ -7,17 +8,19 @@ export default function Courses() {
   const courses = [
     {
       icon: <Landmark className="h-10 w-10 text-[#A8BFA3]" />,
-      title: "SPM Sejarah",
-      level: "Form 4 • Form 5",
+      title: "Sejarah",
+      level: "Form 1 • Form 2 • Form 3",
+      price: "RM60 / month",
       description:
-        "Make SPM Sejarah easier to understand through clear explanations, engaging storytelling, visual timelines, structured notes, and guided exam practice designed to help students remember key facts and answer with confidence.",
+        "Build a strong foundation in Sejarah through clear explanations, engaging storytelling, visual timelines, structured notes, and guided exercises designed to help students understand historical events and remember important facts with confidence.",
     },
     {
       icon: <BookOpen className="h-10 w-10 text-[#7B93B0]" />,
       title: "SPM Pendidikan Moral",
       level: "Form 4 • Form 5",
+      price: "RM70 / month",
       description:
-        "Master SPM Pendidikan Moral through clear understanding of nilai, structured answering techniques, real-life examples, and focused exam preparation to build confidence in every question.",
+        "Master SPM Pendidikan Moral through a deeper understanding of nilai universal, structured answering techniques, real-life examples, and focused examination preparation to help students approach every question with confidence.",
     },
   ];
 
@@ -75,6 +78,15 @@ export default function Courses() {
               <p className="mt-4 leading-7 text-gray-600">
                 {course.description}
               </p>
+
+              <div className="mt-6 border-t border-gray-100 pt-5">
+                <p className="text-sm font-medium text-gray-500">
+                  Monthly Tuition Fee
+                </p>
+                <p className="mt-1 text-2xl font-bold text-[#2F3A3D]">
+                  {course.price}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
